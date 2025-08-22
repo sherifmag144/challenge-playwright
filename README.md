@@ -35,5 +35,7 @@ File: `tests\amazon.spec.js`
 directly from package.json file (testAmazon)
 or write in terminal npx playwright test --project=chromium --headed amazon.spec.js
 and to show the report npx playwright show-report  or directly from package.json (reportHtml)
+if you want to download the repo , you should install all devDependencies in Package.json by write in terminal "npm install" 
+
 
 ```
