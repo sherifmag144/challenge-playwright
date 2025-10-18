@@ -10,15 +10,18 @@
     "prepare": "husky",
     "testAmazon": "npx playwright test --project=chromium --headed amazon.spec.js",
     "challengeOne": "node challenge1/challenge.js",
-    "reportHtml": "npx playwright show-report"
+    "reportHtml": "npx playwright show-report",
+    "agent:planner": "npx playwright agent planner --url https://automationexercise.com/",
+    "agent:generator": "npx playwright agent generator --plan planner-output.md --output tests/ --language javascript"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.55.0",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^20.12.12",
+    "cross-env": "^10.1.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jsonc": "^2.13.0",
